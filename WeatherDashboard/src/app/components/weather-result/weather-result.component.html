@@ -1,0 +1,18 @@
+<section class="weather-result">
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  } @else if (selectedCity() && weather()) {
+    <h2>{{ weather()!.city }}</h2>
+    <div class="weather-details">
+      <div class="icon">{{ weather()!.weatherIcon }}</div>
+      <div class="info">
+        <div class="info">
+          <p><strong>Conditions:</strong> {{ weather()!.weatherDescription }}</p>
+          <p><strong>Temperature:</strong> {{ weather()!.temperature }}°C</p>
+          <p><strong>Humidity:</strong> {{ weather()!.humidity }}%</p>
+          <p><strong>Wind Speed:</strong> {{ weather()!.windSpeed }} km/h</p>
+        </div>
+      </div>
+    </div>
+  }
+</section>

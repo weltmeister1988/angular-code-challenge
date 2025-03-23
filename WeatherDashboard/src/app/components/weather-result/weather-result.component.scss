@@ -1,0 +1,39 @@
+.weather-result {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f0f8ff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  .error {
+    color: #d8000c;
+    background: #ffdddd;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .weather-details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .icon {
+      font-size: 3rem;
+    }
+
+    .info {
+      p {
+        margin: 0.25rem 0;
+        font-size: 1rem;
+        color: #444;
+      }
+    }
+  }
+}
